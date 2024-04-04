@@ -1,0 +1,75 @@
+﻿@model IEnumerable<FrontendCNE.Models.DepartamentoViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Departamentos</h1>
+
+<p>
+    <button class="btnCreate btn btn-primary">Nuevo</button>
+</p>
+<table class="table table-striped table-hover table-bordered" id="myTable">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Dep_Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Dep_Descripcion)
+            </th>
+           
+           
+            
+        
+           
+            <th> Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Dep_Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Dep_Descripcion)
+                </td>
+               
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<script src="~../../lib/jquery/dist/jquery.min.js"></script>
+
+<script src="~../../js/dataTables.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        let table = new DataTable('#myTable');
+    });
+
+
+
+    $('.btnCreate').click(function () {
+        $('#ModalCrear').modal('show')
+
+    });
+</script>
+<div class="modal fade" id="ModalCrear" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            
+            <div class="modal-body">
+                @Html.Partial("_Create", new FrontendCNE.Models.DepartamentoViewModel())
+            </div>
+        </div>
+    </div>
+</div>

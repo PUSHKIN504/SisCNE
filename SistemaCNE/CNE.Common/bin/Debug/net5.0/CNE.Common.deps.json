@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "CNE.Common/1.0.0": {
+        "dependencies": {
+          "CNE.Entities": "1.0.0"
+        },
+        "runtime": {
+          "CNE.Common.dll": {}
+        }
+      },
+      "CNE.Entities/1.0.0": {
+        "runtime": {
+          "CNE.Entities.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CNE.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CNE.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
