@@ -16,7 +16,7 @@ namespace CNE.BusinessLogic
         public static void DataAccess(this IServiceCollection service, string conn)
         {
             service.AddScoped<DepartamentoRepository>();
-
+            service.AddScoped<VotacionesServices>();
             CNEContext.BuildConnectionString(conn);
         }
         public static void BusinessLogic(this IServiceCollection service)

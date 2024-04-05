@@ -11,9 +11,9 @@ using System.Threading.Tasks;
 
 namespace CNE.DataAccess.Repository
 {
-    public class PresidenteRepository : IRepository<tbPresidentes>
+    public class PersonasRepository : IRepository<tbPersonas>
     {
-        public RequestStatus Insert(tbPresidentes item)
+        public RequestStatus Insert(tbPersonas item)
         {
             const string sql = "[Gral].[sp_Departamentos_insertar]";
 
@@ -35,43 +35,54 @@ namespace CNE.DataAccess.Repository
 
         }
 
-        public IEnumerable<tbPresidentes> List()
+        public IEnumerable<tbPersonas> List()
         {
-            const string sql = " [Vota].[sp_Presidentes_listar]";
+            const string sql = "Gral.sp_Departamentos_listar";
 
-            List<tbPresidentes> result = new List<tbPresidentes>();
+            List<tbPersonas> result = new List<tbPersonas>();
 
             using (var db = new SqlConnection(CNEContext.ConnectionString))
             {
-                result = db.Query<tbPresidentes>(sql, commandType: CommandType.Text).ToList();
+                result = db.Query<tbPersonas>(sql, commandType: CommandType.Text).ToList();
 
                 return result;
             }
             //throw new NotImplementedException();
         }
 
+        public tbPersonas VotoVerf(string  DNI)
+        {
+            tbPersonas result = new tbPersonas();
+            using (var db = new SqlConnection(CNEContext.ConnectionString))
+            {
+                var parameter = new DynamicParameters();
+                parameter.Add("@Per_CedulaIdentidad", DNI);
+                result = db.QueryFirst<tbPersonas>(ScriptsBaseDeDatos.ObtenerYaVoto, parameter, commandType: CommandType.StoredProcedure);
+                return result;
+            }
 
+        }
 
-        public RequestStatus Delete(tbPresidentes item)
+        public RequestStatus Delete(tbPersonas item)
         {
             throw new NotImplementedException();
         }
 
-        public tbPresidentes Details(int? id)
+        public tbPersonas Details(int? id)
         {
             throw new NotImplementedException();
         }
 
 
 
-        public tbPresidentes find(int? id)
+        public tbPersonas find(int? id)
         {
             throw new NotImplementedException();
         }
 
 
 
-        RequestStatus IRepository<tbPresidentes>.Update(tbPresidentes item)
+        RequestStatus IRepository<tbPersonas>.Update(tbPersonas item)
         {
             throw new NotImplementedException();
         }

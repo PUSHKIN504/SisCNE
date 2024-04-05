@@ -13,6 +13,8 @@ namespace CNE.API.Extensions
         public MappingProfileExtensions()
         {
             CreateMap<DepartamentoViewModel, tbDepartamentos>().ReverseMap();
+            CreateMap<PersonaViewModel, tbPersonas>().ReverseMap();
+            CreateMap<PresidenteViewModel, tbPresidentes>().ReverseMap();
         }
     }
 }

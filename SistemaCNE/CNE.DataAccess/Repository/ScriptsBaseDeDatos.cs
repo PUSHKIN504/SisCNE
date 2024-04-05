@@ -13,5 +13,10 @@ namespace CNE.DataAccess
         public static string Departamento_Listar = "Gral.sp_Departamentos_listar";
 
         #endregion
+
+        #region Votaciones
+        public static string ObtenerYaVoto = "Vota.sp_Personas_ObtenerSiVoto";
+
+        #endregion
     }
 }

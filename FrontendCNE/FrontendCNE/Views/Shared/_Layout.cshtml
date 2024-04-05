@@ -106,7 +106,7 @@
                         <div class="collapse" id="tables">
                             <ul class="nav flex-column sub-menu">
                                 <li class="nav-item"> <a class="nav-link" asp-controller="DepartamentoController1" asp-action="Index">Departamentos</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/tables/basic-table.html">Estados Civiles</a></li>
+                                <li class="nav-item"> <a class="nav-link">Estados Civiles</a></li>
                                 <li class="nav-item"> <a class="nav-link" href="pages/tables/basic-table.html">Municipios</a></li>
                                 <li class="nav-item"> <a class="nav-link" href="pages/tables/basic-table.html">Personas</a></li>
                             </ul>
@@ -126,8 +126,8 @@
                                 <li class="nav-item"> <a class="nav-link" href="pages/icons/mdi.html">Empleados</a></li>
                                 <li class="nav-item"> <a class="nav-link" href="pages/icons/mdi.html">Mesas</a></li>
                                 <li class="nav-item"> <a class="nav-link" href="pages/icons/mdi.html">Partidos</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/icons/mdi.html">Presidentes</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/icons/mdi.html">Votos</a></li>
+                                <li class="nav-item"> <a class="nav-link" asp-controller="Presidente" asp-action="Index">Presidentes</a></li>
+                                <li class="nav-item"> <a class="nav-link" asp-controller="Votacion" asp-action="Index">Votos</a></li>
                             </ul>
                         </div>
                     </li>
@@ -172,6 +172,7 @@
     <script src="~../../js/template.js"></script>
     <script src="~../../js/settings.js"></script>
     <script src="~../../js/todolist.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- endinject -->
     <!-- plugin js for this page -->
     <script src="~../../vendors/progressbar.js/progressbar.min.js"></script>

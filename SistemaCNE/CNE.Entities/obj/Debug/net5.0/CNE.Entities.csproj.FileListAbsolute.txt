@@ -32,3 +32,15 @@ C:\Users\jason\Desktop\cneActual\CNE\SistemaCNE\CNE.Entities\obj\Debug\net5.0\CN
 C:\Users\jason\Desktop\cneActual\CNE\SistemaCNE\CNE.Entities\obj\Debug\net5.0\CNE.Entities.dll
 C:\Users\jason\Desktop\cneActual\CNE\SistemaCNE\CNE.Entities\obj\Debug\net5.0\ref\CNE.Entities.dll
 C:\Users\jason\Desktop\cneActual\CNE\SistemaCNE\CNE.Entities\obj\Debug\net5.0\CNE.Entities.pdb
+C:\Users\jason\Desktop\cneActual\SisCNE\SistemaCNE\CNE.Entities\bin\Debug\net5.0\CNE.Entities.deps.json
+C:\Users\jason\Desktop\cneActual\SisCNE\SistemaCNE\CNE.Entities\bin\Debug\net5.0\CNE.Entities.dll
+C:\Users\jason\Desktop\cneActual\SisCNE\SistemaCNE\CNE.Entities\bin\Debug\net5.0\ref\CNE.Entities.dll
+C:\Users\jason\Desktop\cneActual\SisCNE\SistemaCNE\CNE.Entities\bin\Debug\net5.0\CNE.Entities.pdb
+C:\Users\jason\Desktop\cneActual\SisCNE\SistemaCNE\CNE.Entities\obj\Debug\net5.0\CNE.Entities.csproj.AssemblyReference.cache
+C:\Users\jason\Desktop\cneActual\SisCNE\SistemaCNE\CNE.Entities\obj\Debug\net5.0\CNE.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jason\Desktop\cneActual\SisCNE\SistemaCNE\CNE.Entities\obj\Debug\net5.0\CNE.Entities.AssemblyInfoInputs.cache
+C:\Users\jason\Desktop\cneActual\SisCNE\SistemaCNE\CNE.Entities\obj\Debug\net5.0\CNE.Entities.AssemblyInfo.cs
+C:\Users\jason\Desktop\cneActual\SisCNE\SistemaCNE\CNE.Entities\obj\Debug\net5.0\CNE.Entities.csproj.CoreCompileInputs.cache
+C:\Users\jason\Desktop\cneActual\SisCNE\SistemaCNE\CNE.Entities\obj\Debug\net5.0\CNE.Entities.dll
+C:\Users\jason\Desktop\cneActual\SisCNE\SistemaCNE\CNE.Entities\obj\Debug\net5.0\ref\CNE.Entities.dll
+C:\Users\jason\Desktop\cneActual\SisCNE\SistemaCNE\CNE.Entities\obj\Debug\net5.0\CNE.Entities.pdb
