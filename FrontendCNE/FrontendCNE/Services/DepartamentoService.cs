@@ -65,5 +65,161 @@ namespace FrontendCNE.Services
                 throw;
             }
         }
+
+        public async Task<ServiceResult> ObtenerDepartamento()
+        {
+            var result = new ServiceResult();
+            try
+            {
+                var response = await _api.Get<IEnumerable<DepartamentoViewModel>, IEnumerable<DepartamentoViewModel>>(req =>
+                {
+                    req.Path = $"API/Departamento/Fill/01";
+
+                });
+                if (!response.Success)
+                {
+                    return result.FromApi(response);
+                }
+                else
+                {
+                    return result.Ok(response.Data);
+                }
+            }
+            catch (Exception ex)
+            {
+                return result.Error(Helpers.GetMessage(ex));
+                throw;
+            }
+        }
+        public async Task<ServiceResult> ObtenerDepartamentoMindy(string Dep_Id)
+        {
+            var result = new ServiceResult();
+            try
+            {
+
+
+                var response = await _api.Get<IEnumerable<DepartamentoViewModel>, DepartamentoViewModel>(req =>
+                {
+                    req.Path = $"API/Departamento/Fill/{Dep_Id}";
+                });
+                if (!response.Success)
+                {
+                    return result.FromApi(response);
+                }
+                else
+                {
+                    return result.Ok(response.Data);
+                }
+            }
+            catch (Exception ex)
+            {
+                return result.Error(Helpers.GetMessage(ex));
+                throw;
+            }
+        }
+
+        public async Task<ServiceResult> EditarDepartamento(DepartamentoViewModel item)
+        {
+            var result = new ServiceResult();
+            try
+            {
+                var response = await _api.Put<DepartamentoViewModel, ServiceResult>(req =>
+                {
+                    req.Path = $"API/Departamento/Edit";
+                    req.Content = item;
+                });
+                if (!response.Success)
+                {
+                    return result.FromApi(response);
+                }
+                else
+                {
+                    return result.Ok(response.Data);
+                }
+            }
+            catch (Exception ex)
+            {
+                return result.Error(Helpers.GetMessage(ex));
+                throw;
+            }
+        }
+
+
+
+
+        //public async Task<ServiceResult> EditarDepartamento(DepartamentoViewModel item)
+        //{
+        //    var result = new ServiceResult();
+        //    try
+        //    {
+        //        var response = await _api.Put<DepartamentoViewModel, ServiceResult>(req =>
+        //        {
+        //            req.Path = $"API/Departamento/Update";
+        //            req.Content = item;
+        //        });
+        //        if (!response.Success)
+        //        {
+        //            return result.FromApi(response);
+        //        }
+        //        else
+        //        {
+        //            return result.Ok(response.Data);
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return result.Error(Helpers.GetMessage(ex));
+        //        throw;
+        //    }
+        //}
+
+        public async Task<ServiceResult> EliminarDepartamento(string id)
+        {
+            var result = new ServiceResult();
+            try
+            {
+                var response = await _api.Delete<string, ServiceResult>(req =>
+                {
+                    req.Path = $"API/Departamento/Delete?Dep_Id={id}";
+                });
+
+                if (response.Success)
+                {
+                    return result.Ok(response.Data);
+                }
+                else
+                {
+                    return result.FromApi(response);
+                }
+            }
+            catch (Exception ex)
+            {
+                return result.Error(Helpers.GetMessage(ex));
+            }
+        }
+        public async Task<ServiceResult> DetallesDepartamento(string id)
+        {
+            var result = new ServiceResult();
+            try
+            {
+                var response = await _api.Get<DepartamentoViewModel, ServiceResult>(req =>
+                {
+                    req.Path = $"API/Departamento/DetailsDepartamentos?Esta_Id={id}";
+                });
+                if (!response.Success)
+                {
+                    return result.FromApi(response);
+                }
+                else
+                {
+                    return result.Ok(response.Data);
+                }
+            }
+            catch (Exception ex)
+            {
+                return result.Error(Helpers.GetMessage(ex));
+                throw;
+            }
+        }
     }
 }

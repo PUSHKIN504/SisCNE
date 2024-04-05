@@ -11,21 +11,21 @@ using System.Threading.Tasks;
 
 namespace CNE.DataAccess.Repository
 {
-    class VotoRepository : IRepository<tbVotos>
+    public class VotoRepository : IRepository<tbVotos>
     {
         public RequestStatus Insert(tbVotos item)
         {
-            const string sql = "[Gral].[sp_Departamentos_insertar]";
+            const string sql = "Vota.sp_Voto_insertar";
 
 
 
             using (var db = new SqlConnection(CNEContext.ConnectionString))
             {
                 var parametro = new DynamicParameters();
-                //parametro.Add("@Dep_Id", item.Dep_Id);
-                //parametro.Add("@Dep_Descripcion", item.Dep_Descripcion);
-                //parametro.Add("@Dep_UsuarioCreacion", item.Dep_UsuarioCreacion);
-                //parametro.Add("@Dep_FechaCreacion", item.Dep_FechaCreacion);
+
+                parametro.Add("@Mes_Id", item.Mes_Id);
+                parametro.Add("@Pre_Id", item.Pre_Id);
+                parametro.Add("@Alc_Id", item.Alc_Id);
 
 
                 var result = db.Execute(sql, parametro, commandType: CommandType.StoredProcedure);
