@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5bdRCTye1v6U6DyKLRaawWgNhI9N43t9yIrKRdUtOicynjUMLLg6Z+OTjV7BNy+s38r5jvNaOEOBo7jTTVqhSA==",
+  "dgSpecHash": "puo2px5JxB475nC9GJjKQRYryazyhAkm0uIyuyABNvep5QSHkZ4XSUkr2C6RWRGUlsWfSr5PxTY49ajXtroCOw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.BusinessLogic\\CNE.BusinessLogic.csproj",
+  "projectFilePath": "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.BusinessLogic\\CNE.BusinessLogic.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jason\\.nuget\\packages\\dapper\\2.0.90\\dapper.2.0.90.nupkg.sha512",
     "C:\\Users\\jason\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

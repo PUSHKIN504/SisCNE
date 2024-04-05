@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0Ym570fbtiPt3QwT1ZvSe735XNhJwYk/KIB/jurPxohdO4CkLj+txWlq/NT/iTN83jUMnfJgQ1/IQMvX1T5cyg==",
+  "dgSpecHash": "vCrJO6kW3umccV6lB/822+L0BHmKmF8H6AnMUwmboGmopOx0mmK5W9Gcnfd/S2o7kHvxbqXrb+fF47W54aaE4A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.DataAccess\\CNE.DataAccess.csproj",
+  "projectFilePath": "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.DataAccess\\CNE.DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jason\\.nuget\\packages\\dapper\\2.0.90\\dapper.2.0.90.nupkg.sha512",
     "C:\\Users\\jason\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
