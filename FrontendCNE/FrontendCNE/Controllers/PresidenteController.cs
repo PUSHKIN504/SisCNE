@@ -1,4 +1,5 @@
-﻿using FrontendCNE.Services;
+﻿using FrontendCNE.Models;
+using FrontendCNE.Services;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -11,9 +12,11 @@ namespace FrontendCNE.Controllers
     {
         
         public PresidenteService _presidenteServicios;
-        public PresidenteController(PresidenteService presidenteServicios)
+        public VotacionesService _VotacionesService;
+        public PresidenteController(PresidenteService presidenteServicios, VotacionesService votacionesService)
         {
             _presidenteServicios = presidenteServicios;
+            _VotacionesService = votacionesService;
         }
         public IActionResult Index()
         {
@@ -31,6 +34,22 @@ namespace FrontendCNE.Controllers
             catch (Exception ex)
             {
                 return RedirectToAction("Index");
+            }
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create(VotoViewModel item)
+        {
+            try
+            {
+                
+                var list = await _VotacionesService.CrearVoto(item);
+                return RedirectToAction("Index", "Votacion");
+                //return View(new List<DepartamentoViewModel> { (DepartamentoViewModel)list.Data } );
+            }
+            catch (Exception ex)
+            {
+                return View(item);
             }
         }
     }

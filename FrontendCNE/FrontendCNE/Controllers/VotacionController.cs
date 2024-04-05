@@ -1,4 +1,5 @@
-﻿using FrontendCNE.Services;
+﻿using FrontendCNE.Models;
+using FrontendCNE.Services;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -32,5 +33,23 @@ namespace FrontendCNE.Controllers
                 return RedirectToAction("Index");
             }
         }
+
+
+        [HttpPost]
+        public async Task<IActionResult> Create(VotoViewModel item)
+        {
+            try
+            {
+                
+                var list = await _VotacionesServicios.CrearVoto(item);
+                return RedirectToAction("Index");
+                //return View(new List<DepartamentoViewModel> { (DepartamentoViewModel)list.Data } );
+            }
+            catch (Exception ex)
+            {
+                return View(item);
+            }
+        }
+
     }
 }

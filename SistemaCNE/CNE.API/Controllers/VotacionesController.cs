@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using CNE.BusinessLogic.Services;
 using CNE.Common.Models;
+using CNE.Entities.Entities;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -9,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace CNE.API.Controllers
 {
+
     public class VotacionesController : Controller
     {
         private readonly GeneralServices _generalServices;
@@ -37,6 +39,20 @@ namespace CNE.API.Controllers
         {
             var list = _votacionesServices.ListadoPresi();
             return Json(list);
+        }
+
+        [HttpPost("Voto/Create")]
+        public IActionResult Insert(VotoViewModel item)
+        {
+            var model = _mapper.Map<tbVotos>(item);
+            var modelo = new tbVotos()
+            {
+                Pre_Id = item.Pre_Id,
+                Mes_Id = item.Mes_Id,
+                Alc_Id = item.Alc_Id,
+            };
+            var list = _votacionesServices.InsertarVoto(modelo);
+            return Ok(list);
         }
     }
 }

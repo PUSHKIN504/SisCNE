@@ -36,6 +36,7 @@ namespace CNE.API
             services.AddHttpContextAccessor();
             services.AddScoped<PersonasRepository>();
             services.AddScoped<PresidenteRepository>();
+            services.AddScoped<VotoRepository>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>

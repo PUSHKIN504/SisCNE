@@ -15,6 +15,7 @@ namespace CNE.API.Extensions
             CreateMap<DepartamentoViewModel, tbDepartamentos>().ReverseMap();
             CreateMap<PersonaViewModel, tbPersonas>().ReverseMap();
             CreateMap<PresidenteViewModel, tbPresidentes>().ReverseMap();
+            CreateMap<VotoViewModel, tbVotos>().ReverseMap();
         }
     }
 }

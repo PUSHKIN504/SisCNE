@@ -17,6 +17,7 @@ namespace CNE.BusinessLogic
         {
             service.AddScoped<DepartamentoRepository>();
             service.AddScoped<VotacionesServices>();
+            service.AddScoped<VotoRepository>();
             CNEContext.BuildConnectionString(conn);
         }
         public static void BusinessLogic(this IServiceCollection service)
