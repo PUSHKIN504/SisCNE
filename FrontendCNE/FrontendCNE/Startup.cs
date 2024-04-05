@@ -32,6 +32,8 @@ namespace FrontendCNE
             services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
             services.AddControllersWithViews();
             services.AddScoped<DepartamentoService>();
+            services.AddScoped<VotacionesService>();
+            services.AddScoped<PresidenteService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

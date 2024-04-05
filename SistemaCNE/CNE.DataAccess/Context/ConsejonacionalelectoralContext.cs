@@ -463,6 +463,8 @@ namespace CNE.DataAccess.Context
                     .IsRequired()
                     .HasMaxLength(30);
 
+                entity.Property(e => e.Per_Voto).HasDefaultValueSql("((0))");
+
                 entity.HasOne(d => d.EsC)
                     .WithMany(p => p.tbPersonas)
                     .HasForeignKey(d => d.EsC_Id)

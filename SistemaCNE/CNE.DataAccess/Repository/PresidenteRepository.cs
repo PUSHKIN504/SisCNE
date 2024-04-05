@@ -11,9 +11,9 @@ using System.Threading.Tasks;
 
 namespace CNE.DataAccess.Repository
 {
-    class PresidenteRepository : IRepository<tbPersonas>
+    public class PresidenteRepository : IRepository<tbPresidentes>
     {
-        public RequestStatus Insert(tbPersonas item)
+        public RequestStatus Insert(tbPresidentes item)
         {
             const string sql = "[Gral].[sp_Departamentos_insertar]";
 
@@ -35,15 +35,15 @@ namespace CNE.DataAccess.Repository
 
         }
 
-        public IEnumerable<tbPersonas> List()
+        public IEnumerable<tbPresidentes> List()
         {
-            const string sql = "Gral.sp_Departamentos_listar";
+            const string sql = " [Vota].[sp_Presidentes_listar]";
 
-            List<tbPersonas> result = new List<tbPersonas>();
+            List<tbPresidentes> result = new List<tbPresidentes>();
 
             using (var db = new SqlConnection(CNEContext.ConnectionString))
             {
-                result = db.Query<tbPersonas>(sql, commandType: CommandType.Text).ToList();
+                result = db.Query<tbPresidentes>(sql, commandType: CommandType.Text).ToList();
 
                 return result;
             }
@@ -52,26 +52,26 @@ namespace CNE.DataAccess.Repository
 
 
 
-        public RequestStatus Delete(tbPersonas item)
+        public RequestStatus Delete(tbPresidentes item)
         {
             throw new NotImplementedException();
         }
 
-        public tbPersonas Details(int? id)
-        {
-            throw new NotImplementedException();
-        }
-
-
-
-        public tbPersonas find(int? id)
+        public tbPresidentes Details(int? id)
         {
             throw new NotImplementedException();
         }
 
 
 
-        RequestStatus IRepository<tbPersonas>.Update(tbPersonas item)
+        public tbPresidentes find(int? id)
+        {
+            throw new NotImplementedException();
+        }
+
+
+
+        RequestStatus IRepository<tbPresidentes>.Update(tbPresidentes item)
         {
             throw new NotImplementedException();
         }

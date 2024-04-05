@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.API\\CNE.API.csproj": {}
+    "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.API\\CNE.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.API\\CNE.API.csproj": {
+    "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.API\\CNE.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.API\\CNE.API.csproj",
+        "projectUniqueName": "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.API\\CNE.API.csproj",
         "projectName": "CNE.API",
-        "projectPath": "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.API\\CNE.API.csproj",
+        "projectPath": "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.API\\CNE.API.csproj",
         "packagesPath": "C:\\Users\\jason\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.API\\obj\\",
+        "outputPath": "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jason\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.BusinessLogic\\CNE.BusinessLogic.csproj": {
-                "projectPath": "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.BusinessLogic\\CNE.BusinessLogic.csproj"
+              "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.BusinessLogic\\CNE.BusinessLogic.csproj": {
+                "projectPath": "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.BusinessLogic\\CNE.BusinessLogic.csproj"
               },
-              "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.Common\\CNE.Common.csproj": {
-                "projectPath": "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.Common\\CNE.Common.csproj"
+              "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.Common\\CNE.Common.csproj": {
+                "projectPath": "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.Common\\CNE.Common.csproj"
               }
             }
           }
@@ -54,6 +54,10 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[11.0.0, )"
+            },
+            "Microsoft.AspNet.WebApi.Cors": {
+              "target": "Package",
+              "version": "[5.3.0, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
@@ -96,14 +100,14 @@
         }
       }
     },
-    "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.BusinessLogic\\CNE.BusinessLogic.csproj": {
+    "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.BusinessLogic\\CNE.BusinessLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.BusinessLogic\\CNE.BusinessLogic.csproj",
+        "projectUniqueName": "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.BusinessLogic\\CNE.BusinessLogic.csproj",
         "projectName": "CNE.BusinessLogic",
-        "projectPath": "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.BusinessLogic\\CNE.BusinessLogic.csproj",
+        "projectPath": "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.BusinessLogic\\CNE.BusinessLogic.csproj",
         "packagesPath": "C:\\Users\\jason\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.BusinessLogic\\obj\\",
+        "outputPath": "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.BusinessLogic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jason\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -120,8 +124,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.DataAccess\\CNE.DataAccess.csproj": {
-                "projectPath": "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.DataAccess\\CNE.DataAccess.csproj"
+              "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.DataAccess\\CNE.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.DataAccess\\CNE.DataAccess.csproj"
               }
             }
           }
@@ -154,14 +158,14 @@
         }
       }
     },
-    "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.Common\\CNE.Common.csproj": {
+    "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.Common\\CNE.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.Common\\CNE.Common.csproj",
+        "projectUniqueName": "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.Common\\CNE.Common.csproj",
         "projectName": "CNE.Common",
-        "projectPath": "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.Common\\CNE.Common.csproj",
+        "projectPath": "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.Common\\CNE.Common.csproj",
         "packagesPath": "C:\\Users\\jason\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.Common\\obj\\",
+        "outputPath": "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jason\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -178,8 +182,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.Entities\\CNE.Entities.csproj": {
-                "projectPath": "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.Entities\\CNE.Entities.csproj"
+              "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.Entities\\CNE.Entities.csproj": {
+                "projectPath": "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.Entities\\CNE.Entities.csproj"
               }
             }
           }
@@ -212,14 +216,14 @@
         }
       }
     },
-    "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.DataAccess\\CNE.DataAccess.csproj": {
+    "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.DataAccess\\CNE.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.DataAccess\\CNE.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.DataAccess\\CNE.DataAccess.csproj",
         "projectName": "CNE.DataAccess",
-        "projectPath": "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.DataAccess\\CNE.DataAccess.csproj",
+        "projectPath": "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.DataAccess\\CNE.DataAccess.csproj",
         "packagesPath": "C:\\Users\\jason\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jason\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -236,8 +240,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.Entities\\CNE.Entities.csproj": {
-                "projectPath": "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.Entities\\CNE.Entities.csproj"
+              "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.Entities\\CNE.Entities.csproj": {
+                "projectPath": "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.Entities\\CNE.Entities.csproj"
               }
             }
           }
@@ -284,14 +288,14 @@
         }
       }
     },
-    "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.Entities\\CNE.Entities.csproj": {
+    "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.Entities\\CNE.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.Entities\\CNE.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.Entities\\CNE.Entities.csproj",
         "projectName": "CNE.Entities",
-        "projectPath": "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.Entities\\CNE.Entities.csproj",
+        "projectPath": "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.Entities\\CNE.Entities.csproj",
         "packagesPath": "C:\\Users\\jason\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.Entities\\obj\\",
+        "outputPath": "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jason\\AppData\\Roaming\\NuGet\\NuGet.Config",

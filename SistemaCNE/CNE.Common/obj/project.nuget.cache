@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Kc91fWUrzjW10MaTx+fgkfsAkYNarrb++UvKnnBhz8CXksV+D331hqBqX2Mq8o6cXrbxX6p+XGV6mQKGHjA2FA==",
+  "dgSpecHash": "LcLLkEjk4cBoZcfk8oF/iI09x7aK/ddWDZODoTaaotuYHCnF3t1ZZRWJvj6eYsFWqD3Ey1mhwY0WTnDJEuDDpA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.Common\\CNE.Common.csproj",
+  "projectFilePath": "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.Common\\CNE.Common.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

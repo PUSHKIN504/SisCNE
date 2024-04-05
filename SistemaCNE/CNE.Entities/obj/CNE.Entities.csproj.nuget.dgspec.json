@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.Entities\\CNE.Entities.csproj": {}
+    "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.Entities\\CNE.Entities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.Entities\\CNE.Entities.csproj": {
+    "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.Entities\\CNE.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.Entities\\CNE.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.Entities\\CNE.Entities.csproj",
         "projectName": "CNE.Entities",
-        "projectPath": "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.Entities\\CNE.Entities.csproj",
+        "projectPath": "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.Entities\\CNE.Entities.csproj",
         "packagesPath": "C:\\Users\\jason\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.Entities\\obj\\",
+        "outputPath": "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jason\\AppData\\Roaming\\NuGet\\NuGet.Config",

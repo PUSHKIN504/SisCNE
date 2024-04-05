@@ -5769,11 +5769,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.BusinessLogic\\CNE.BusinessLogic.csproj",
+      "projectUniqueName": "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.BusinessLogic\\CNE.BusinessLogic.csproj",
       "projectName": "CNE.BusinessLogic",
-      "projectPath": "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.BusinessLogic\\CNE.BusinessLogic.csproj",
+      "projectPath": "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.BusinessLogic\\CNE.BusinessLogic.csproj",
       "packagesPath": "C:\\Users\\jason\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.BusinessLogic\\obj\\",
+      "outputPath": "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.BusinessLogic\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jason\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5790,8 +5790,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.DataAccess\\CNE.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\SistemaCNE\\CNE.DataAccess\\CNE.DataAccess.csproj"
+            "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.DataAccess\\CNE.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\SistemaCNE\\CNE.DataAccess\\CNE.DataAccess.csproj"
             }
           }
         }

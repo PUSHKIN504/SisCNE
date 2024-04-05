@@ -1,5 +1,6 @@
 using CNE.API.Extensions;
 using CNE.BusinessLogic;
+using CNE.DataAccess.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -33,6 +34,8 @@ namespace CNE.API
             services.AddAutoMapper(x => x.AddProfile<MappingProfileExtensions>(), AppDomain.CurrentDomain.GetAssemblies());
 
             services.AddHttpContextAccessor();
+            services.AddScoped<PersonasRepository>();
+            services.AddScoped<PresidenteRepository>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -44,9 +47,10 @@ namespace CNE.API
                 options.AddPolicy("AllowSpecificOrigin",
                   builder =>
                   {
-                      builder.WithOrigins("http://localhost:44334")
-                              .AllowAnyHeader()
-                              .AllowAnyMethod();
+                      builder.WithOrigins(/*""*/)/*http://localhost:44334*/
+                             .AllowAnyHeader()
+                             .AllowAnyMethod()
+                             .AllowAnyOrigin();
                   });
             });
         }

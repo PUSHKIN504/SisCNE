@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VF/zdqRLwA1BkigrMyIPFsZa/eceJhHZlkkNpbQYkyAYvdKniQ0oz9LLysA9ipzVQKpdbDVTCLzNzY9shfNX+g==",
+  "dgSpecHash": "M0wvDXkAei7gfOmFbEPxTEQY49ki127jzLGwfFG6WXcDFeNfvoB/XjPOp+TirHD6arb4utA3FiUkVwfLhB4lPw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\FrontendCNE\\FrontendCNE\\FrontendCNE.csproj",
+  "projectFilePath": "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\FrontendCNE\\FrontendCNE\\FrontendCNE.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jason\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\jason\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

@@ -6237,11 +6237,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\FrontendCNE\\FrontendCNE\\FrontendCNE.csproj",
+      "projectUniqueName": "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\FrontendCNE\\FrontendCNE\\FrontendCNE.csproj",
       "projectName": "FrontendCNE",
-      "projectPath": "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\FrontendCNE\\FrontendCNE\\FrontendCNE.csproj",
+      "projectPath": "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\FrontendCNE\\FrontendCNE\\FrontendCNE.csproj",
       "packagesPath": "C:\\Users\\jason\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jason\\Desktop\\cneActual\\CNE\\FrontendCNE\\FrontendCNE\\obj\\",
+      "outputPath": "C:\\Users\\jason\\Desktop\\cneActual\\SisCNE\\FrontendCNE\\FrontendCNE\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jason\\AppData\\Roaming\\NuGet\\NuGet.Config",
