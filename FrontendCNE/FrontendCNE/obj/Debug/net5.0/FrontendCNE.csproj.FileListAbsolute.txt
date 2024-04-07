@@ -487,3 +487,14 @@ C:\Users\informatica\Desktop\CNE\SisCNE\FrontendCNE\FrontendCNE\obj\Debug\net5.0
 C:\Users\informatica\Desktop\CNE\SisCNE\FrontendCNE\FrontendCNE\obj\Debug\net5.0\Razor\Views\DepartamentoController1\_Details2.cshtml.g.cs
 C:\Users\informatica\Desktop\CNE\SisCNE\FrontendCNE\FrontendCNE\obj\Debug\net5.0\Razor\Views\DepartamentoController1\_Edit.cshtml.g.cs
 C:\Users\informatica\Desktop\CNE\SisCNE\FrontendCNE\FrontendCNE\obj\Debug\net5.0\Razor\Views\DepartamentoController1\Details.cshtml.g.cs
+C:\Users\jason\Desktop\cneActual\SisCNE\FrontendCNE\FrontendCNE\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\jason\Desktop\cneActual\SisCNE\FrontendCNE\FrontendCNE\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\jason\Desktop\cneActual\SisCNE\FrontendCNE\FrontendCNE\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\jason\Desktop\cneActual\SisCNE\FrontendCNE\FrontendCNE\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+C:\Users\jason\Desktop\cneActual\SisCNE\FrontendCNE\FrontendCNE\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\Users\jason\Desktop\cneActual\SisCNE\FrontendCNE\FrontendCNE\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\jason\Desktop\cneActual\SisCNE\FrontendCNE\FrontendCNE\obj\Debug\net5.0\Razor\Views\DepartamentoController1\Details.cshtml.g.cs
+C:\Users\jason\Desktop\cneActual\SisCNE\FrontendCNE\FrontendCNE\obj\Debug\net5.0\Razor\Views\DepartamentoController1\_Delete.cshtml.g.cs
+C:\Users\jason\Desktop\cneActual\SisCNE\FrontendCNE\FrontendCNE\obj\Debug\net5.0\Razor\Views\DepartamentoController1\_Details2.cshtml.g.cs
+C:\Users\jason\Desktop\cneActual\SisCNE\FrontendCNE\FrontendCNE\obj\Debug\net5.0\Razor\Views\DepartamentoController1\_Edit.cshtml.g.cs
+C:\Users\jason\Desktop\cneActual\SisCNE\FrontendCNE\FrontendCNE\obj\Debug\net5.0\Razor\Views\Votacion\_Create.cshtml.g.cs

@@ -2,6 +2,7 @@
 using CNE.BusinessLogic.Services;
 using CNE.Common.Models;
 using CNE.Entities.Entities;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -15,13 +16,15 @@ namespace CNE.API.Controllers
     {
         private readonly GeneralServices _generalServices;
         private readonly VotacionesServices _votacionesServices;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
         private readonly IMapper _mapper;
-        public VotacionesController(GeneralServices generalServices, IMapper mapper, VotacionesServices votacionesServices)
+        public VotacionesController(GeneralServices generalServices, IMapper mapper, VotacionesServices votacionesServices, IHttpContextAccessor httpContextAccessor)
         {
             _generalServices = generalServices;
             _votacionesServices = votacionesServices;
             _mapper = mapper;
+            _httpContextAccessor = httpContextAccessor;
         }
         public IActionResult Index()
         {
@@ -30,6 +33,8 @@ namespace CNE.API.Controllers
         [HttpGet("InfoVotante/{DNI}")]
         public IActionResult List(string DNI)
         {
+            var session = _httpContextAccessor.HttpContext.Session;
+            session.SetString("DNI", DNI);
             var list = _generalServices.YaVoto(DNI);
             return Json(list);
         }
@@ -40,7 +45,14 @@ namespace CNE.API.Controllers
             var list = _votacionesServices.ListadoPresi();
             return Json(list);
         }
-
+        [HttpGet("Alcaldes/List/{DNI}")]
+        public IActionResult AlList(string DNI)
+        {
+            var session = _httpContextAccessor.HttpContext.Session;
+            session.SetString("DNI", DNI);
+            var list = _votacionesServices.ListAlc(session.GetString("DNI"));
+            return Json(list);
+        }
         [HttpPost("Voto/Create")]
         public IActionResult Insert(VotoViewModel item)
         {

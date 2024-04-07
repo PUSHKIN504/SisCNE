@@ -11,21 +11,40 @@ namespace CNE.BusinessLogic.Services
     public class VotacionesServices
     {
         private readonly PresidenteRepository _presidenteRepository;
+        private readonly AlcaldesRepository _alcaldesRepository;
         //private readonly MunicipioRepository _municipioRepository;
         //private readonly EstadoCivilRepository _estadoCivilRepository;
         private readonly VotoRepository _votoRepository;
 
 
-        public VotacionesServices(PresidenteRepository presidenteRepository, VotoRepository votoRepository/*, MunicipioRepository municipioRepository, EstadoCivilRepository estadoCivilRepository*/)
+        public VotacionesServices(PresidenteRepository presidenteRepository, VotoRepository votoRepository, AlcaldesRepository alcaldesRepository/*, MunicipioRepository municipioRepository, EstadoCivilRepository estadoCivilRepository*/)
         {
             _presidenteRepository = presidenteRepository;
             //    _municipioRepository = municipioRepository;
             //   _estadoCivilRepository = estadoCivilRepository;
             _votoRepository = votoRepository;
+            _alcaldesRepository = alcaldesRepository;
 
 
         }
 
+
+        #region Alcaldes
+        public ServiceResult ListAlc(string DNI)
+        {
+            var result = new ServiceResult();
+            try
+            {
+                var list = _alcaldesRepository.ListA(DNI);
+
+                return result.Ok(list);
+            }
+            catch (Exception ex)
+            {
+                return result.Error(ex);
+            }
+        }
+        #endregion
         #region Presidentes
 
         public ServiceResult ListadoPresi()
