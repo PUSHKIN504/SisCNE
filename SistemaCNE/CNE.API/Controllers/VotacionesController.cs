@@ -38,7 +38,12 @@ namespace CNE.API.Controllers
             var list = _generalServices.YaVoto(DNI);
             return Json(list);
         }
-
+        [HttpGet("Diputados/List")]
+        public IActionResult ListDip()
+        {
+            var list = _votacionesServices.ListDip();
+            return Json(list);
+        }
         [HttpGet("Presidentes/List")]
         public IActionResult PreList()
         {
@@ -59,12 +64,30 @@ namespace CNE.API.Controllers
             var model = _mapper.Map<tbVotos>(item);
             var modelo = new tbVotos()
             {
+                dni = item.dni,
                 Pre_Id = item.Pre_Id,
                 Mes_Id = item.Mes_Id,
                 Alc_Id = item.Alc_Id,
             };
             var list = _votacionesServices.InsertarVoto(modelo);
             return Ok(list);
+        }
+
+        [HttpPost("Diputados/Create")]
+        public IActionResult GuardarDiputados([FromBody] List<int> diputadosSeleccionados)
+        {
+            // Aquí puedes acceder a los IDs de los diputados seleccionados
+            // Realiza el procesamiento necesario con los diputados seleccionados
+            // por ejemplo:
+            
+            foreach (var id in diputadosSeleccionados)
+            {
+                 var list = _votacionesServices.InsertarVotoD(id);
+                return Ok(list);
+            }
+
+            // Devolver una respuesta (por ejemplo, un mensaje de éxito)
+                return Ok("ok");
         }
     }
 }

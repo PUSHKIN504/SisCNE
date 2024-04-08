@@ -7,16 +7,16 @@ using System.Threading.Tasks;
 
 namespace CNE.Common.Models
 {
-    class AlcaldesViewModel
+    class DiputadoViewModel
     {
-        public int Alc_Id { get; set; }
-        public int? Alc_Votos { get; set; }
-        public string Alc_ImgUrl { get; set; }
-        public int Alc_UsuarioCreacion { get; set; }
-        public DateTime Alc_FechaCreacion { get; set; }
-        public int? Alc_UsuarioModificacion { get; set; }
-        public DateTime? Alc_FechaModificacion { get; set; }
-        public bool? Alc_Estado { get; set; }
+        public int Dip_Id { get; set; }
+        public int? Dip_Votos { get; set; }
+        public string Dip_ImgUrl { get; set; }
+        public int Dip_UsuarioCreacion { get; set; }
+        public DateTime Dip_FechaCreacion { get; set; }
+        public int? Dip_UsuarioModificacion { get; set; }
+        public DateTime? Dip_FechaModificacion { get; set; }
+        public bool? Dip_Estado { get; set; }
         public int? Par_id { get; set; }
         [NotMapped]
         public string Par_ImgUrl { get; set; }

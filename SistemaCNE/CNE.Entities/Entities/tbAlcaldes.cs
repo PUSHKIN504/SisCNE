@@ -22,7 +22,7 @@ namespace CNE.Entities.Entities
         public int? Alc_UsuarioModificacion { get; set; }
         public DateTime? Alc_FechaModificacion { get; set; }
         public bool? Alc_Estado { get; set; }
-        [NotMapped]
+      
         public int? Par_id { get; set; }
         [NotMapped]
         public string Par_ImgUrl { get; set; }
