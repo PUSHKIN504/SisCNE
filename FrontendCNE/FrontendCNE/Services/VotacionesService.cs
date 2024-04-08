@@ -55,7 +55,7 @@ namespace FrontendCNE.Services
             {
                 var response = await _api.Post<VotoViewModel, ServiceResult>(req =>
                 {
-                    req.Path = $"/Voto/Create?Mes_Id={item.Mes_Id}&Pre_Id={item.Pre_Id}&Alc_Id={item.Alc_Id}";
+                    req.Path = $"/Voto/Create?Mes_Id={1}&Pre_Id={item.Pre_Id}&Alc_Id={item.Alc_Id}&dni={item.dni}";
                     req.Content = item;
                 });
                 if (!response.Success)
