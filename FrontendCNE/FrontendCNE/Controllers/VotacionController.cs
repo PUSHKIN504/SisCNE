@@ -24,11 +24,12 @@ namespace FrontendCNE.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult AlgunaAccion(string id)
+        public void AlgunaAccion(string id)
         {
             HttpContext.Session.SetString("DNI", id);
-            return Ok();
         }
+
+
         [HttpGet("Votaciones/InfoVotante/{DNI}")]
         public async Task<IActionResult> YaVoto(string DNI)
         {
@@ -48,12 +49,12 @@ namespace FrontendCNE.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> Create(VotoViewModel item)
+        public async Task<IActionResult> Create(VotoViewModel item, List<int> listaEnteros)
         {
             try
             {
                 
-                var list = await _VotacionesServicios.CrearVoto(item);
+                var list = await _VotacionesServicios.CrearVoto(item/*, listaEnteros*/);
                 return RedirectToAction("Index");
                 //return View(new List<DepartamentoViewModel> { (DepartamentoViewModel)list.Data } );
             }

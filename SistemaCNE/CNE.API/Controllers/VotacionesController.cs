@@ -59,7 +59,7 @@ namespace CNE.API.Controllers
             return Json(list);
         }
         [HttpPost("Voto/Create")]
-        public IActionResult Insert(VotoViewModel item)
+        public IActionResult Insert(VotoViewModel item,List<int> listaEnteros)
         {
             var model = _mapper.Map<tbVotos>(item);
             var modelo = new tbVotos()
@@ -70,11 +70,13 @@ namespace CNE.API.Controllers
                 Alc_Id = item.Alc_Id,
             };
             var list = _votacionesServices.InsertarVoto(modelo);
+
+            GuardarDiputados(listaEnteros);
             return Ok(list);
         }
 
         [HttpPost("Diputados/Create")]
-        public IActionResult GuardarDiputados([FromBody] List<int> diputadosSeleccionados)
+        public void GuardarDiputados(List<int> diputadosSeleccionados)
         {
             // Aquí puedes acceder a los IDs de los diputados seleccionados
             // Realiza el procesamiento necesario con los diputados seleccionados
@@ -83,11 +85,9 @@ namespace CNE.API.Controllers
             foreach (var id in diputadosSeleccionados)
             {
                  var list = _votacionesServices.InsertarVotoD(id);
-                return Ok(list);
             }
 
             // Devolver una respuesta (por ejemplo, un mensaje de éxito)
-                return Ok("ok");
         }
     }
 }

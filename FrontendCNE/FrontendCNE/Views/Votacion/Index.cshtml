@@ -174,17 +174,26 @@
                 }
             })
             .then(function (data) {
-                if (data.data.per_Voto === false) {
-                    console.log("El valor de per_Voto es false.", data.data.per_Voto);
-                    window.location.href = "/Presidente";
-                } else {
+                if (data.data.per_Voto === true) {
                     console.log("El valor de per_Voto no es false.", data.data.per_Voto);
+                    console.log("El valor de per_Voto no es false.", id);
                     Swal.fire({
                         title: "ADVERTENCIA",
                         text: "Ya realizó su voto",
                         icon: "info"
                     });
                 }
+                else {
+                    console.log("El valor de per_Voto es false.", data.data.per_Voto);
+                    if (data.data.per_Voto === false) {
+                        console.log("Si entro al otro if");
+                        window.location.href = "/Presidente";
+                    }
+
+                   
+                    
+                }
+               
             })
             .catch(function (error) {
                 console.error('Authorization failed : ' + error.message);
@@ -199,14 +208,7 @@
             url: "/Votacion/AlgunaAccion", // Reemplaza "Controlador" por el nombre de tu controlador
             type: "POST",
             data: { id: id },
-            success: function (response) {
-                console.log("Valor de DNI almacenado en sesión correctamente.");
-                // Continúa con el manejo de la respuesta si es necesario
-            },
-            error: function () {
-                console.error("Error al almacenar el valor de DNI en sesión.");
-                // Maneja el error si es necesario
-            }
+            
         });
         @{
 

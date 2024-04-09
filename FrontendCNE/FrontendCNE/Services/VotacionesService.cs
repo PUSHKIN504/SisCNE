@@ -1,6 +1,7 @@
 ﻿using FrontendCNE.Models;
 using FrontendCNE.WebAPI;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -53,9 +54,10 @@ namespace FrontendCNE.Services
             var result = new ServiceResult();
             try
             {
+                string listaEnterosStr = string.Join(",", item.listaEnteros);
                 var response = await _api.Post<VotoViewModel, ServiceResult>(req =>
                 {
-                    req.Path = $"/Voto/Create?Mes_Id={1}&Pre_Id={item.Pre_Id}&Alc_Id={item.Alc_Id}&dni={item.dni}";
+                    req.Path = $"/Voto/Create?listaEnteros={listaEnterosStr}&Mes_Id={1}&Pre_Id={item.Pre_Id}&Alc_Id={item.Alc_Id}&dni={item.dni}";
                     req.Content = item;
                 });
                 if (!response.Success)
